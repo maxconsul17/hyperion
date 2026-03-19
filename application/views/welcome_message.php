@@ -672,8 +672,8 @@
             <span class="nav-label">Reports</span>
         </a>
 
-        <!-- Management -->
-        <div class="nav-section-label">Management</div>
+        <!-- Human Resource Management -->
+        <div class="nav-section-label">Human Resource Management</div>
 
         <a href="#" class="nav-item-link" data-label="Users">
             <i class="bi bi-people-fill nav-icon"></i>
@@ -911,6 +911,3 @@
         }
     });
 </script>
-
-</body>
-</html>
