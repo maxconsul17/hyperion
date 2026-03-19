@@ -1,11 +1,9 @@
 FROM php:7.2-fpm
 
-# Fix: Debian Buster is EOL, repos moved to archive
 RUN echo "deb http://archive.debian.org/debian buster main" > /etc/apt/sources.list && \
     echo "deb http://archive.debian.org/debian-security buster/updates main" >> /etc/apt/sources.list && \
     echo 'Acquire::Check-Valid-Until "false";' > /etc/apt/apt.conf.d/99no-check-valid
 
-# Install system dependencies
 RUN apt-get update && apt-get install -y \
     libpng-dev \
     libjpeg-dev \
@@ -16,7 +14,6 @@ RUN apt-get update && apt-get install -y \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
-# Install PHP extensions required by CodeIgniter 3
 RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
     && docker-php-ext-install \
         pdo \
@@ -30,3 +27,5 @@ RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-di
 WORKDIR /var/www/html
 
 RUN chown -R www-data:www-data /var/www/html
+
+CMD ["php-fpm"]
