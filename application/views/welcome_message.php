@@ -648,7 +648,7 @@
     <!-- Brand -->
     <a href="#" class="sidebar-brand">
         <div class="brand-icon">H</div>
-        <span class="brand-name">Hyperion</span>
+        <span class="brand-name">Hyperionsss</span>
     </a>
 
     <!-- Navigation -->
