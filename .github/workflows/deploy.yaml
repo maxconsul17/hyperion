@@ -22,7 +22,7 @@ jobs:
           script: |
             cd /home/ubuntu/hyperion
             git pull origin main
-            cp .env.production .env
+            cp .env_production .env
             docker compose down
             docker compose up -d --build
             docker system prune -f
