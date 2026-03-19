@@ -648,7 +648,7 @@
     <!-- Brand -->
     <a href="#" class="sidebar-brand">
         <div class="brand-icon">H</div>
-        <span class="brand-name">Hyperion</span>
+        <span class="brand-name">Hyperion MAX</span>
     </a>
 
     <!-- Navigation -->
@@ -673,7 +673,7 @@
         </a>
 
         <!-- Management -->
-        <div class="nav-section-label">Human Resource</div>
+        <div class="nav-section-label">Management</div>
 
         <a href="#" class="nav-item-link" data-label="Users">
             <i class="bi bi-people-fill nav-icon"></i>
